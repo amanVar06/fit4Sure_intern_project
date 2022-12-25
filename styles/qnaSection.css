@@ -1,0 +1,261 @@
+.qnaSection {
+  padding: 20px;
+  margin-bottom: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 50px;
+}
+
+.qnaBox {
+  width: 343px;
+  padding: 30px;
+
+  background: #ffffff;
+  border: 1px solid #dac1da;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media screen and (max-width: 320px) {
+  .qnaBox {
+    width: 90%;
+  }
+}
+
+.ques-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #2e0132;
+}
+
+.student-name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #612866;
+}
+
+.sample-answer {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #616161;
+}
+
+.qnaBox div {
+  width: 265px;
+  height: 2px;
+
+  background-color: #6ea2c3;
+}
+
+@media screen and (max-width: 320px) {
+  .qnaBox {
+    width: 90%;
+  }
+
+  .qnaBox div {
+    width: 100%;
+  }
+}
+
+.qnaBox button {
+  padding: 0.6rem 1.8rem;
+  border: none;
+  outline: none;
+  position: relative;
+  z-index: 1;
+  border-radius: 20px;
+  background: var(--border-gradient);
+  cursor: pointer;
+}
+
+.qnaBox button::before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  right: 1px;
+  top: 1px;
+  bottom: 1px;
+  border-radius: 19px;
+  background-color: white;
+  z-index: -1;
+  transition: 200ms;
+}
+
+.qnaBox button::after {
+  content: attr(data);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #3c343d;
+  background: #2e0132;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 200ms;
+}
+
+.getACallBox {
+  width: 70%;
+  margin-inline: auto;
+
+  margin-bottom: 50px;
+
+  border: 2px solid #efe1ef;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+
+  padding: 30px 70px;
+}
+
+@media screen and (max-width: 1024px) {
+  .getACallBox {
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    padding: 30px 70px;
+  }
+}
+
+.gacBox-img-container {
+  width: 239px;
+  height: 243px;
+}
+
+.frame-image {
+  width: 100%;
+  object-fit: contain;
+}
+
+.gacBox-content {
+  text-align: left;
+}
+
+.gacBox-content p:nth-child(1) {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #2e0132;
+}
+
+.gacBox-content p:nth-child(2) {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: #616161;
+}
+
+.gacBox-content p:nth-child(3) {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #616161;
+  margin: 40px auto;
+}
+
+.gacBox-content button {
+  text-align: center;
+  color: var(--white-color);
+  padding: 11px 32px;
+  border: none;
+  border-radius: 10px;
+  background: var(--green-gradient);
+}
+
+.gacBox-content form {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 15px;
+}
+
+.gacBox-content form input {
+  width: 257px;
+  height: 44px;
+
+  border: 1px solid #c2c2c2;
+  border-radius: 5px;
+  outline: none;
+
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 780px) {
+  .gacBox-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .gacBox-content p:nth-child(1) {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: #2e0132;
+  }
+
+  .gacBox-content p:nth-child(2) {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    color: #616161;
+  }
+
+  .gacBox-content p:nth-child(3) {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #616161;
+    margin: 20px auto;
+  }
+
+  .gacBox-content button {
+    text-align: center;
+    color: var(--white-color);
+    padding: 7px 16px;
+    border: none;
+    border-radius: 6px;
+    background: var(--green-gradient);
+  }
+
+  .gacBox-content form input {
+    width: 157px;
+    height: 32px;
+
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    outline: none;
+
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}

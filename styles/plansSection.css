@@ -1,0 +1,154 @@
+.plans-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px;
+}
+
+.plans-heading {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+
+  /* txt dark */
+
+  color: #2e0132;
+  text-align: center;
+}
+
+.plans-heading-bottom {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+
+  /* grey 1 */
+
+  color: #444647;
+  text-align: center;
+}
+
+.blank-container {
+  margin-top: 80px;
+  width: 94%;
+  background: #f6f5f7;
+  border-radius: 20px;
+
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.service-box-container {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 20px;
+}
+
+.service-box {
+  width: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+
+.empty-box {
+  width: 208px;
+  height: 208px;
+
+  background: #ffffff;
+  border: 1.98246px solid #ebdbe4;
+  border-radius: 19.8246px;
+}
+
+.service-box p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #2e0132;
+}
+
+.button-container {
+  width: 100%;
+  margin: 20px auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1250px) {
+  .blank-container {
+    margin-top: 180px;
+    height: 256px;
+    padding: 0px;
+    position: relative;
+  }
+
+  .service-box-container {
+    position: absolute;
+    width: 85vw;
+    top: -120px;
+
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+
+  .service-box {
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .empty-box {
+    width: 208px;
+    height: 208px;
+
+    background: #ffffff;
+    border: 1.98246px solid #ebdbe4;
+    border-radius: 19.8246px;
+  }
+
+  .service-box p {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #2e0132;
+  }
+
+  .button-container {
+    position: absolute;
+
+    bottom: -25px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+}

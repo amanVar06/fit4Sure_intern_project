@@ -1,0 +1,75 @@
+.success-stories-section {
+  margin-bottom: 130px;
+}
+
+.success-stories-heading {
+  margin: 20px auto;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: center;
+  color: #0f2b34;
+}
+
+.success-stories-desc {
+  max-width: 805px;
+  margin-inline: auto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #616161;
+}
+
+.stories-picture-container {
+  margin-top: 70px;
+  padding: auto 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.people-image-container {
+  height: 358px;
+  background: #ffffff;
+
+  border: 2px solid #d6d1d1;
+  border-radius: 6.97022px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.pic-top-part {
+  flex: 0.87;
+  padding: 20px 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pic-ppl-img-container {
+  width: 100%;
+}
+
+.pic-ppl-img-container img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.pic-bottom-part {
+  flex: 0.13;
+  background: #f6f5f7;
+}
+
+@media screen and (max-width: 1024px) {
+  .stories-picture-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+}

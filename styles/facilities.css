@@ -1,0 +1,64 @@
+.whats-sets-our-app-apart {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: center;
+
+  margin: 40px auto;
+
+  color: #0f2b34;
+}
+
+.facilities {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+
+  margin-bottom: 120px;
+}
+
+.facilities-box-container {
+  width: 280px;
+  height: 320px;
+  padding: 20px;
+
+  background: #ffffff;
+  border: 1.98246px solid #ebdbe4;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.facility-img-container {
+  width: 149px;
+  height: 141px;
+}
+
+.facility-img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.yellow-horizontal-line {
+  width: 120px;
+  height: 4px;
+  text-align: center;
+
+  background: #f7ab61;
+  border: none;
+}
+
+.facility-info {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+
+  color: #2e0132;
+}

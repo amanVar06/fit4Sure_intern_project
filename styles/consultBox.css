@@ -1,0 +1,173 @@
+.apps__container {
+  margin-bottom: 8rem;
+
+  padding: 50px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.horizontal-line {
+  height: 1px;
+  width: 70%;
+  margin-inline: auto;
+  border: 1px solid #c2c2c2;
+  background-color: #c2c2c2;
+}
+
+.google-play,
+.app-store {
+  width: 187px;
+  height: 54px;
+  margin-inline: auto;
+  cursor: pointer;
+}
+
+.google-play {
+  width: 187px;
+  height: 54px;
+
+  margin-inline: auto;
+  cursor: pointer;
+}
+
+.app-store {
+  width: 187px;
+  height: 54px;
+
+  margin-inline: auto;
+  cursor: pointer;
+}
+
+.app__image {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 1024px) {
+  .apps__container {
+    margin-bottom: 4rem;
+  }
+
+  .google-play {
+    position: absolute;
+
+    top: 23px;
+    left: 30%;
+    cursor: pointer;
+  }
+
+  .app-store {
+    position: absolute;
+
+    top: 23px;
+    left: 55%;
+    cursor: pointer;
+  }
+}
+
+.consult__box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  padding: 20px;
+  margin-bottom: 6rem;
+}
+
+.timing__text {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+
+  color: #2e0132;
+}
+
+.consult-box {
+  width: 975px;
+
+  background: #ffffff;
+  border: 1px solid #c1acc1;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.consult-box-top {
+  flex: 0.25;
+  background-color: #d9d5dd;
+  padding: 40px 120px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+
+  color: #2e0132;
+  flex-wrap: wrap;
+}
+
+.consult-box-bottom {
+  flex: 0.75;
+  padding: 40px 90px;
+}
+
+.consult-box-text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+
+  /* txt mid */
+
+  color: #616161;
+}
+
+.consult-box-bottom button {
+  margin-inline: auto;
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  color: var(--white-color);
+  padding: 11px 32px 0px 32px;
+  border: none;
+  border-radius: 10px;
+  background: var(--green-gradient);
+}
+
+@media screen and (max-width: 1024px) {
+  .consult-box {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .timing__text {
+    font-size: 22px;
+    line-height: 34px;
+    margin-inline: auto;
+  }
+
+  .consult-box-top {
+    padding: 20px 40px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .consult-box-bottom {
+    padding: 20px 35px;
+  }
+
+  .consult-box-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
